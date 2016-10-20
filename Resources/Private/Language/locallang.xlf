@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="messages" date="2016-10-19T08:58:20Z" product-name="facebookpage">
+		<header/>
+		<body>
+			<trans-unit id="tx_facebookpage_domain_model_facebook">
+				<source>Facebook</source>
+			</trans-unit>
+                        <trans-unit id="tx_facebookpage_domain_model_facebook.title">
+				<source>Title</source>
+			</trans-unit>
+                        <trans-unit id="tx_facebookpage_domain_model_facebook.pageurl">
+				<source>Page Url</source>
+			</trans-unit>
+                        <trans-unit id="tx_facebookpage_domain_model_facebook.tabs">
+				<source>Tabs</source>
+			</trans-unit>
+                        <trans-unit id="tx_facebookpage_domain_model_facebook.width">
+				<source>Width(180px-500px)</source>
+			</trans-unit>
+                        <trans-unit id="tx_facebookpage_domain_model_facebook.height">
+				<source>Height(Min. 70px)</source>
+			</trans-unit>
+                        <trans-unit id="tx_facebookpage_domain_model_facebook.friends">
+				<source>Show Friend's Faces</source>
+			</trans-unit>
+                        <trans-unit id="tx_facebookpage_domain_model_facebook.timeline">
+				<source>Timeline</source>
+			</trans-unit>
+                        <trans-unit id="tx_facebookpage_domain_model_facebook.events">
+				<source>Events</source>
+			</trans-unit>
+                        <trans-unit id="tx_facebookpage_domain_model_facebook.messages">
+				<source>Messages</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

@@ -1,0 +1,91 @@
+<T3DataStructure>
+<sheets>
+<sDEF>
+<ROOT>
+<TCEforms>
+<sheetTitle>Facebook Page Config</sheetTitle>
+</TCEforms>
+<type>array</type>
+<el>
+	<settings.title>
+		<TCEforms>
+		<label>LLL:EXT:facebookpage/Resources/Private/Language/locallang.xlf:tx_facebookpage_domain_model_facebook.title</label>
+			<config>
+				<type>input</type>
+                                <eval>required</eval>
+			</config>
+		</TCEforms>
+	</settings.title>
+        <settings.pageurl>
+		<TCEforms>
+		<label>LLL:EXT:facebookpage/Resources/Private/Language/locallang.xlf:tx_facebookpage_domain_model_facebook.pageurl</label>
+			<config>
+				<type>input</type>
+                                <eval>required,domainname</eval>
+			</config>
+		</TCEforms>
+	</settings.pageurl>
+	<settings.tabs>
+		<TCEforms>
+		<label>LLL:EXT:facebookpage/Resources/Private/Language/locallang.xlf:tx_facebookpage_domain_model_facebook.tabs</label>
+				<config>
+				  <type>select</type>
+                                  <renderType>selectCheckBox</renderType>
+				  <items type="array">
+				    <numIndex index="0" type="array">
+				      <numIndex index="0">LLL:EXT:facebookpage/Resources/Private/Language/locallang.xlf:tx_facebookpage_domain_model_facebook.timeline</numIndex>
+				      <numIndex index="1">timeline</numIndex>
+				    </numIndex>
+				    <numIndex index="1" type="array">
+				      <numIndex index="0">LLL:EXT:facebookpage/Resources/Private/Language/locallang.xlf:tx_facebookpage_domain_model_facebook.events</numIndex>
+				      <numIndex index="1">events</numIndex>
+				    </numIndex>
+				    <numIndex index="3" type="array">
+				      <numIndex index="0">LLL:EXT:facebookpage/Resources/Private/Language/locallang.xlf:tx_facebookpage_domain_model_facebook.messages</numIndex>
+				      <numIndex index="1">messages</numIndex>
+				    </numIndex>
+				  </items>
+				  <maxitems>3</maxitems>
+				  <size>3</size>
+				  <multiple>1</multiple>
+				</config>
+		</TCEforms>
+	</settings.tabs>
+	<settings.width>
+		<TCEforms>
+		<label>LLL:EXT:facebookpage/Resources/Private/Language/locallang.xlf:tx_facebookpage_domain_model_facebook.width</label>
+			<config>
+				<type>input</type>
+				<eval>int</eval>
+                                <range>
+                                    <upper>500</upper>
+                                    <lower>180</lower>
+                                </range>
+			</config>
+		</TCEforms>
+	</settings.width>
+	<settings.height>
+		<TCEforms>
+		<label>LLL:EXT:facebookpage/Resources/Private/Language/locallang.xlf:tx_facebookpage_domain_model_facebook.height</label>
+			<config>
+				<type>input</type>
+				<eval>int</eval>
+                                <range>
+                                    <lower>70</lower>
+                                </range>
+			</config>
+		</TCEforms>
+	</settings.height>
+	<settings.friends>
+		<TCEforms>
+			<label>LLL:EXT:facebookpage/Resources/Private/Language/locallang.xlf:tx_facebookpage_domain_model_facebook.friends</label>
+			<config>
+			  <type>check</type>
+			</config>
+		</TCEforms>
+	</settings.friends>
+</el>
+</ROOT>
+</sDEF>
+</sheets>
+</T3DataStructure>
