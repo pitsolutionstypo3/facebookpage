@@ -32,14 +32,6 @@ namespace Pits\Facebookpage\Controller;
 class FacebookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
 {
 
-    /**
-     * facebookRepository
-     *
-     * @var \Pits\Facebookpage\Domain\Repository\FacebookRepository
-     * @inject
-     */
-    protected $facebookRepository = NULL;
-    
 
     /**
      * action configure

@@ -18,7 +18,7 @@
 Change Log
 ----------
 
-- 0.0.1 Initial Uploads [20/10/16].
+- 1.0.0 Initial Uploads [20/10/16].
 
 -
 
