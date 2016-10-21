@@ -42,10 +42,7 @@ class FacebookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
 
     public function ConfigureAction()
     {
-        $objectManager = \TYPO3\CMS\Core\Utility\GeneralUtility::makeInstance('TYPO3\\CMS\\Extbase\\Object\\ObjectManager');
-        $fb = $objectManager->get('Pits\\Facebookpage\\Controller\\FacebookController'); 
-        $settings = $fb->settings;
-        
+        $settings = $this->settings;
         $friends = ($settings['friends']==1)?'true':'false';
         
         $this->view->assignMultiple(
