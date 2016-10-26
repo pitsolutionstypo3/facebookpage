@@ -18,7 +18,7 @@ Installation
 	:width: 500px
 	:alt: Extension Manager
 
-	Installation from extension managr
+	Installation from extension manager
 
 Include in root template
 -------------------------
