@@ -33,6 +33,9 @@
                         <trans-unit id="tx_facebookpage_domain_model_facebook.messages">
 				<source>Messages</source>
 			</trans-unit>
+                        <trans-unit id="tx_facebookpage_domain_model_facebook.showicons">
+				<source>Show Facebook Like and Share Widget</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

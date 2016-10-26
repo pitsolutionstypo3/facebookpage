@@ -41,7 +41,11 @@ class FacebookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
      */
 
     public function ConfigureAction()
-    {
+    {        
+        $page = $GLOBALS['TSFE']->page;
+        if($page['tx_fb_like'] == 1){
+            $html = $this->renderfbicons();
+        }        
         $settings = $this->settings;
         $friends = ($settings['friends']==1)?'true':'false';
         
@@ -52,9 +56,23 @@ class FacebookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
                     'width'=>$settings['width'],
                     'height'=> $settings['height'],
                     'friends'=> $friends,
-                    'tabs'=> $settings['tabs']
+                    'tabs'=> $settings['tabs'],
+                    'html'=>$html
+                
                  )
         );
+    }
+    
+    public function renderfbicons(){
+         $curpageurl = $this->uriBuilder->getRequest()->getRequestUri();
+         $renderer = $this->objectManager->get('TYPO3\\CMS\\Fluid\\View\\StandaloneView');
+         $renderer->setControllerContext($this->controllerContext);
+         $renderer->setFormat('html');
+         $conf = $this->configurationManager->getConfiguration(\TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK);
+         $extpath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('facebookpage');
+         $renderer->setTemplatePathAndFilename($extpath.'Resources/Private/Templates/Facebook/fbicons.html');
+         $renderer->assign('url',$curpageurl);
+         return $renderer->render();
     }
     
 

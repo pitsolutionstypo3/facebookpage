@@ -52,18 +52,19 @@ plugin.tx_facebookpage._CSS_DEFAULT_STYLE (
 
 )
 page.includeJS{
- jquery = https://code.jquery.com/jquery-1.12.4.js
- jquery.external=1
- jq = https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js
- jq.external=1
  fb = EXT:facebookpage/Resources/Public/Js/Main.js
- dice = EXT:facebookpage/Resources/Public/Js/dice-menu.min.js
-
-}
-page.includeCSS{
- css1 = https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css
- css1.external=1
- css2 = EXT:facebookpage/Resources/Public/Styles/dice-menu.min.css
- css = EXT:facebookpage/Resources/Public/Styles/Main.css
 }
 
+[globalVar=TSFE:page|tx_fb_like=1]
+lib.fblike = TEXT
+lib.fblike.value = {TSFE:baseUrl}{TSFE:siteScript}
+lib.fblike.insertData = 1
+lib.fblike.wrap = <div class="fb-like" data-href="|"  data-layout="standard" data-action="like" data-show-faces="true"></div>
+[global]
+
+[globalVar=TSFE:page|tx_fb_share=1]
+lib.fbshare = TEXT
+lib.fbshare.value = {TSFE:baseUrl}{TSFE:siteScript}
+lib.fbshare.insertData = 1
+lib.fbshare.wrap = <div class="fb-share-button" data-href="|"  data-layout="button_count"></div>
+[global]
