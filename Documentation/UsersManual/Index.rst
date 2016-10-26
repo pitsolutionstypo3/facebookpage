@@ -30,6 +30,8 @@ Configuration of facebook Page Extension is very easy.Select the Facebook Pluggi
 	:Friend's Faces:
 		This field is used to set the friend's faces alrady likes the page
 
+Facebook Widget
+-----------------
 Facebook page extension also provide a widget for facebook like and facebook share.The widget can be set any page of your site.Steps for adding widget is described below.
 
 1.Include 'Facebook Widget' template in your main template.
