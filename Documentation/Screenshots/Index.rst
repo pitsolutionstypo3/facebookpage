@@ -45,3 +45,17 @@ Frontend View
 	:alt: Frontend view
 
 	Frontend View
+
+Widget Configuration
+--------------
+.. figure:: ../Images/includes.png
+	:width: 500px
+	:alt: Include in template
+
+	Include widget template
+
+.. figure:: ../Images/widgetconf.png
+	:width: 500px
+	:alt: Widget configuration
+
+	Facebook Widget Configuration
