@@ -18,10 +18,9 @@ $fb_like_share = array(
         'pages',
         $fb_like_share
 );
-//\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
-//        'pages',
-//        'tx_fb_like, tx_fb_share'
-//);
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addToAllTCAtypes(
+        'pages',
+        'tx_fb_like'
+);
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette('pages', 'visibility', 'tx_fb_share');
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addFieldsToPalette('pages', 'visibility', 'tx_fb_like');
