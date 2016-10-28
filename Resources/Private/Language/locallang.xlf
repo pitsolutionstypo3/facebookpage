@@ -2,7 +2,7 @@
 <xliff version="1.0">
 	<file source-language="en" datatype="plaintext" original="messages" date="2016-10-19T08:58:20Z" product-name="facebookpage">
 		<header/>
-		<body>
+		    <body>
 			<trans-unit id="tx_facebookpage_domain_model_facebook">
 				<source>Facebook</source>
 			</trans-unit>
@@ -36,6 +36,6 @@
                         <trans-unit id="tx_facebookpage_domain_model_facebook.showicons">
 				<source>Show Facebook Like and Share Widget</source>
 			</trans-unit>
-		</body>
+		    </body>
 	</file>
 </xliff>

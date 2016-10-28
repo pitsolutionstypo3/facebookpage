@@ -1,23 +1,23 @@
 
 plugin.tx_facebookpage {
-	view {
-		# cat=plugin.tx_facebookpage/file; type=string; label=Path to template root (FE)
-		templateRootPath = EXT:facebookpage/Resources/Private/Templates/
-		# cat=plugin.tx_facebookpage/file; type=string; label=Path to template partials (FE)
-		partialRootPath = EXT:facebookpage/Resources/Private/Partials/
-		# cat=plugin.tx_facebookpage/file; type=string; label=Path to template layouts (FE)
-		layoutRootPath = EXT:facebookpage/Resources/Private/Layouts/
-	}
-	persistence {
-		# cat=plugin.tx_facebookpage//a; type=string; label=Default storage PID
-		storagePid =
-	}
-        settings{
-            title = 
-            pageurl =
-            tabs = timeline
-            width =
-            height = 
-            friends =
-        }
+    view {
+        # cat=plugin.tx_facebookpage/file; type=string; label=Path to template root (FE)
+	templateRootPath = EXT:facebookpage/Resources/Private/Templates/
+	# cat=plugin.tx_facebookpage/file; type=string; label=Path to template partials (FE)
+	partialRootPath = EXT:facebookpage/Resources/Private/Partials/
+	# cat=plugin.tx_facebookpage/file; type=string; label=Path to template layouts (FE)
+	layoutRootPath = EXT:facebookpage/Resources/Private/Layouts/
+    }
+    persistence {
+	# cat=plugin.tx_facebookpage//a; type=string; label=Default storage PID
+	storagePid =
+    }
+    settings{
+        title = 
+        pageurl =
+        tabs = timeline
+        width =
+        height = 
+        friends =
+    }
 }

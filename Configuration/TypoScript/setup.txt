@@ -1,56 +1,50 @@
 
 plugin.tx_facebookpage {
-	view {
-		templateRootPaths.0 = {$plugin.tx_facebookpage.view.templateRootPath}
-		partialRootPaths.0 = {$plugin.tx_facebookpage.view.partialRootPath}
-		layoutRootPaths.0 = {$plugin.tx_facebookpage.view.layoutRootPath}
-	}
-	persistence {
-		storagePid = {$plugin.tx_facebookpage.persistence.storagePid}
-	}
-        settings {
-                title = {$plugin.tx_facebookpage.settings.title}
-                pageurl = {$plugin.tx_facebookpage.settings.pageurl}
-                tabs = {$plugin.tx_facebookpage.settings.tabs}
-                width = {$plugin.tx_facebookpage.settings.width}
-                height = {$plugin.tx_facebookpage.settings.height}
-                friends = {$plugin.tx_facebookpage.settings.friends}
-        }
+    view {
+        templateRootPaths.0 = {$plugin.tx_facebookpage.view.templateRootPath}
+	partialRootPaths.0 = {$plugin.tx_facebookpage.view.partialRootPath}
+	layoutRootPaths.0 = {$plugin.tx_facebookpage.view.layoutRootPath}
+    }
+    persistence {
+	storagePid = {$plugin.tx_facebookpage.persistence.storagePid}
+    }
+    settings {
+        title = {$plugin.tx_facebookpage.settings.title}
+        pageurl = {$plugin.tx_facebookpage.settings.pageurl}
+        tabs = {$plugin.tx_facebookpage.settings.tabs}
+        width = {$plugin.tx_facebookpage.settings.width}
+        height = {$plugin.tx_facebookpage.settings.height}
+        friends = {$plugin.tx_facebookpage.settings.friends}
+    }
 }
 
 plugin.tx_facebookpage._CSS_DEFAULT_STYLE (
-	textarea.f3-form-error {
-		background-color:#FF9F9F;
-		border: 1px #FF0000 solid;
-	}
-
-	input.f3-form-error {
-		background-color:#FF9F9F;
-		border: 1px #FF0000 solid;
-	}
-
-	.tx-facebookpage table {
-		border-collapse:separate;
-		border-spacing:10px;
-	}
-
-	.tx-facebookpage table th {
-		font-weight:bold;
-	}
-
-	.tx-facebookpage table td {
-		vertical-align:top;
-	}
-
-	.typo3-messages .message-error {
-		color:red;
-	}
-
-	.typo3-messages .message-ok {
-		color:green;
-	}
-
+    textarea.f3-form-error {
+        background-color:#FF9F9F;
+	border: 1px #FF0000 solid;
+    }
+    input.f3-form-error {
+	background-color:#FF9F9F;
+	border: 1px #FF0000 solid;
+    }
+    .tx-facebookpage table {
+	border-collapse:separate;
+	border-spacing:10px;
+    }
+    .tx-facebookpage table th {
+	font-weight:bold;
+    }
+    .tx-facebookpage table td {
+	vertical-align:top;
+    }
+    .typo3-messages .message-error {
+	color:red;
+    }
+    .typo3-messages .message-ok {
+        color:green;
+    }
 )
+
 page.includeJS{
     jquery = https://code.jquery.com/jquery-1.12.4.js
     jquery.external=1
