@@ -1,18 +1,18 @@
 #sticky-Left-Banner{
-position:fixed;
-background: antiquewhite;
-line-height: 35px;
-right: 0px;
-text-align:center;
-width:125px;
-top:50px;
+    position:fixed;
+    background: antiquewhite;
+    line-height: 35px;
+    right: 0px;
+    text-align:center;
+    width:125px;
+    top:50px;
 }
 #sticky-Left-Banner li{
-   display: block;
-   height: 25px;
-   line-height: 2px;
-   position: relative;
-   text-align: center;
-   width: 35px;
+    display: block;
+    height: 25px;
+    line-height: 2px;
+    position: relative;
+    text-align: center;
+    width: 35px;
 }
 
