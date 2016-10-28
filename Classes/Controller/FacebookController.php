@@ -2,7 +2,7 @@
 
 namespace Pits\Facebookpage\Controller;
 
-/* * *************************************************************
+/***************************************************************
  *
  *  Copyright notice
  *
@@ -25,20 +25,20 @@ namespace Pits\Facebookpage\Controller;
  *  GNU General Public License for more details.
  *
  *  This copyright notice MUST APPEAR in all copies of the script!
- * ************************************************************* */
+ ***************************************************************/
 
 /**
- * FacebookController
+ * FacebookController.
  */
-class FacebookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController {
-
+class FacebookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
+{
     /**
-     * action configure
+     * action configure.
      *
      * @param \Pits\Facebookpage\Domain\Model\Facebook $facebook
-     * @return void
      */
-    public function ConfigureAction() {
+    public function ConfigureAction()
+    {
         $page = $GLOBALS['TSFE']->page;
         if ($page['tx_fb_like'] == 1) {
             $html = $this->renderfbicons();
@@ -47,28 +47,30 @@ class FacebookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
         $friends = ($settings['friends'] == 1) ? 'true' : 'false';
 
         $this->view->assignMultiple(
-                array(
+                 array(
                     'title' => $settings['title'],
                     'url' => $settings['pageurl'],
                     'width' => $settings['width'],
                     'height' => $settings['height'],
                     'friends' => $friends,
                     'tabs' => $settings['tabs'],
-                    'html' => $html
-                )
+                    'html' => $html,
+
+                 )
         );
     }
 
-    public function renderfbicons() {
+    public function renderfbicons()
+    {
         $curpageurl = $this->uriBuilder->getRequest()->getRequestUri();
         $renderer = $this->objectManager->get('TYPO3\\CMS\\Fluid\\View\\StandaloneView');
         $renderer->setControllerContext($this->controllerContext);
         $renderer->setFormat('html');
         $conf = $this->configurationManager->getConfiguration(\TYPO3\CMS\Extbase\Configuration\ConfigurationManagerInterface::CONFIGURATION_TYPE_FRAMEWORK);
         $extpath = \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::extPath('facebookpage');
-        $renderer->setTemplatePathAndFilename($extpath . 'Resources/Private/Templates/Facebook/fbicons.html');
+        $renderer->setTemplatePathAndFilename($extpath.'Resources/Private/Templates/Facebook/fbicons.html');
         $renderer->assign('url', $curpageurl);
+
         return $renderer->render();
     }
-
 }
