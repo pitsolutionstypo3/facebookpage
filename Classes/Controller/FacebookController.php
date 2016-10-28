@@ -64,7 +64,7 @@ class FacebookController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionControl
     
     /**
      * Render facebook like and share icons.
-     * @return string
+     * @return string the html content to render widget
      */
     public function renderFbicons() {
         $curpageurl = $this->uriBuilder->getRequest()->getRequestUri();
